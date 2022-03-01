@@ -74,14 +74,12 @@ input:checked + .slider {
   color: blue;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #363636;
-}
-
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  background-color: rgb(255, 210, 7);
+  border-radius: -20px 50% 50% -20;
 }
 
 /* Rounded sliders */

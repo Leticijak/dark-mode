@@ -2,11 +2,25 @@ import React from "react"
 import "./Hero.scss"
 const Hero = (props) => {
   return (
-    <div className={props.darkMode ? "hero dark" : "hero"}>
-      <h1 className='hero-text'>
-        Welcome to the {props.darkMode ? " 🌕 " : " 🌻 "} mode
-      </h1>
-    </div>
+    <>
+      <div className={props.darkMode ? "hero dark" : "hero"}>
+        {props.darkMode ? (
+          <div class='moon'>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        ) : (
+          <div class='sun'></div>
+        )}
+      </div>
+    </>
   )
 }
 
