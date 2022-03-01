@@ -1,0 +1,15 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+
+  transition: all 0.8s;
+}
+
+.hero.dark {
+  background-color: #161616;
+  color: #fff;
+  transition: all 0.8s;
+}
