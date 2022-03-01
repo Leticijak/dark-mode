@@ -5,14 +5,14 @@
   height: 100vh;
   flex-direction: column;
 
-  transition: all 0.8s;
+  transition: all 1s;
   background-color: rgba(203, 230, 255, 0.1);
 }
 
 .hero.dark {
   background-color: #161616;
   color: #fff;
-  transition: all 0.8s;
+  transition: all 1s;
 }
 
 .moon {
@@ -26,7 +26,7 @@
   border-radius: 50%;
   box-shadow: inset -25px 0px 0 0px #9098a1,
     0 0 65px rgba($color: #ffffff, $alpha: 0.2);
-  transition: transform 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   li {
     position: absolute;
     list-style: none;
@@ -90,7 +90,8 @@
 }
 
 .moon:hover {
-  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+  filter: brightness(115%);
 }
 
 .sun {
@@ -108,5 +109,6 @@
 }
 
 .sun:hover {
-  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+  filter: brightness(103%);
 }
